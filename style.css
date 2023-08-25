@@ -4,7 +4,8 @@
 }
 body{
     font-family: 'Merriweather', serif;
-     background-color: #f9fafc;
+    background-color: #ebf2ff;
+
 }
 .navbar__brand{
     width: 100px;
@@ -17,22 +18,268 @@ body{
     align-items: center;
     justify-content: space-around;
     background-color: #fff;
+    box-shadow:  0 25px 10px -12px rgba(0, 0, 0, 0.15);
 
 }
 .navbar__item{
-    background-image: linear-gradient(90deg, #ff512f, #dd2476, #ff512f);
+    background-image: linear-gradient(
+          to right,
+          #ff512f 0%,
+           #dd2476 51%,
+           #ff512f 100%
+          );
     color: #fff;
     border: none;
-    padding: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left:16px;
+    padding-right: 16px;
     border-radius: 6px;
     font-weight: 600;
 }
+.container{
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.background__image{
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: -3;
+}
+.image{
+   width: 100%;
+}
+.hero__image__container{
+    position: relative;
+    width: 100%;
+}
+.hero__image{
+    width: 100%;
+    border-radius: 8px; 
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.hero__text{
+    margin-top: 80px ; 
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #1d3557;
+}
+.explore__menu__text{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 800;
+    color: #1d3557;
+}
+
+.food__card__image{
+    width: 100%;
+}
+.food__image{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.food__card{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color:#ebf2ff; ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.food__tittle{
+    padding: 20px 0 5px 10px;
+    font-weight: 700;
+    color: #1d3557;
+    font-size: 22px;
+}
+.food__card__description{
+    text-align:left;
+    padding-bottom: 10px;
+}
+.food__paragraph{
+    padding-left: 9px;
+    color: #1d3557;
+    font-weight: 700;
+
+}
+.email__subscribe__container{
+    margin-top: 25px;
+}
+.subscribe__text{
+    text-align: left;
+    font-size: 28px;
+    color: #1d3557;
+    font-weight: 800;
+}
+.email__input__container{
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.email{
+    padding: 7px;
+    background-color: #fcedf0;
+   border:2px solid #ee89a0; 
+}
+.email__button{
+    background-image: linear-gradient(
+          to right,
+          #ff512f 0%,
+           #dd2476 51%,
+           #ff512f 100%
+          );
+    color: #fff;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left:16px;
+    padding-right: 16px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+.picture__text{
+    position: relative;
+    margin-top: 40px;
+}
+.qoute__image{
+    border-radius: 8px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-image: linear-gradient(
+        to right,
+        #0a4065,
+        #62acdd
+    );
+}
+.picture__text__description{
+    font-size: 24px;
+    font-weight: 800;
+    padding: 10px;
+    color: white;
+}
+.footer__task{
+    border-radius: 15px;
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+         #dd2476 51%,
+         #ff512f 100%
+        );
+    margin-top: 40px;
+    text-align: center;
+}
+.footer__text{
+    padding-top: 50px;
+    font-size: 70px;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    font-family: 'Vollkorn', serif;
+}
+.footer__list{
+    padding-left: 80px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
 @media(min-width:768px){
+   
+    .background__image{
+        margin-top: -30px;
+
+    }
+    
     .navbar{
         justify-content:space-between;
-        padding: 10px 30px;
+        padding: 10px 15px;
     }
+    .hero__description{
+        padding-bottom: 30px;
+    }
+    .hero__container{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .explore__menu__text{
+        padding-top: 10px;
+    }
+    .explore__menu__lists{
+        display: flex;
+        
+    }
+    .food__card{
+        margin: 10px;
+    }
+    #pizza__card{
+        margin-top: -20px;
+        margin-bottom: 40px;
+    }
+    .explore__menu__lists{
+        margin-top: 40px;
+    }
+    .explore__menu__gradient__bg{
+        position: absolute;
+        top: 15px;
+        bottom: 0;
+       
+        width: 100%;
+        height: 105%;
+        background-image: linear-gradient(
+          to right,
+          #ff512f 0%,
+           #dd2476 51%,
+           #ff512f 100%
+          );
+        z-index: -3;
+        transform: skewY(-5deg);
+    }
+    .explore__menu__container{
+    position: relative;
+    margin-top: 70px;
+    }
+   .email__subscribe__container{
+    margin: 70px 0px 0 150px;
+   }
+   .subscribe__text{
+    font-size: 28px;
+   }
+   .picture__text__description{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 34px;
+   }
+   .picture__text{
+    margin-top: 40px;
+    text-align: center;
+   }
+   .footer__task{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+   .footer__text{
+    padding-left: 20px;
+   }
+   .footer__list{
+    font-size: 18px;
+   }
+
+ 
 }
+
 @media(min-width:1024px){
     .navbar__brand{
         width: 150px;
@@ -41,6 +288,43 @@ body{
         padding: 20px;
         font-size: 20px;
     }
+    .hero__image__container{
+        position: relative;
+    }
+    .background__image{
+        position: absolute;
+       width: 100%;
+        
+    }
+    .hero__description{
+        width:100% ;
+        font-weight: 600;
+    }
+    .container{
+        max-width: 60%;
+    }
+    .hero__text{
+        font-size: 45px;
+    }
+    .email__subscribe__container{
+        margin: 100px 200px;
+    }
+    .subscribe__text{
+        font-size: 50px;
+    }
+    .email{
+        padding-right: 95px;
+    }.picture__text__description{
+        padding-top: 60px ;
+        padding-bottom: 60px;
+    }
+    .navbar{
+        justify-content: space-between;
+       
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+   
 }
 .navbar__item:hover{
     border: 2px solid #ff6767;
